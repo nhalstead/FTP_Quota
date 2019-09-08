@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var (
-		host = flag.String("host", "", "FTP Host, host:port")
+		host = flag.String("host", "127.0.0.1:21", "FTP Host, host:port")
 		username = flag.String("username", "anonymous", "Username to connect to as, Default is `anonymous`")
 		password = flag.String("password", "anonymous", "Password to connect to with, Default is `anonymous`")
 		timeout = flag.Duration("timeout", 10*time.Second, "Timeout, Default is 10 Seconds")
